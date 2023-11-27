@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cart">
+        <p id="pcart">Cart</p>
+        <hr>
+        <div id="cart1">
+            <div class="pic">
+                <img class="pics" src="./res/Blender.jpg" alt="">
+                <button>REMOVE</button>
+            </div>
+            <div class="name">
+                <p class="thename">Blender</p>
+                <p class="seller">Seller: Jumia</p>
+                <p class="units">Few units left</p>
+            </div>
+            <div class="price">
+                <p>N20,000</p>
+                <!-- <span><img src="./res/heart-svgrepo-com.svg" alt=""></span> -->
+                <div>
+                    <button id="minbtn1" disabled onclick="subone(1)">-</button>
+                    <span id="item1">1</span>
+                    <button onclick="addone(1)">+</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="cart2">
+            <div class="pic">
+                <img class="pics" src="./res/Iron.jpg" alt="">
+                <button>REMOVE</button>
+            </div>
+            <div class="name">
+                <p class="thename">Iron</p>
+                <p class="seller">Seller: Jumia</p>
+                <p class="units">Few units left</p>
+            </div>
+            <div class="price">
+                <p><!--<del>N30,000</del> -->N15,000</p>
+                <div>
+                    <button id="minbtn2" disabled onclick="subone(2)">-</button>
+                    <span id="item2">1</span>
+                    <button onclick="addone(2)">+</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="cart3">
+            <div class="pic">
+                <img class="pics" src="./res/Laptop.jpg" alt="">
+                <button>REMOVE</button>
+            </div>
+            <div class="name">
+                <p class="thename">Laptop</p>
+                <p class="seller">Seller: Jumia</p>
+                <p class="units">Few units left</p>
+            </div>
+            <div class="price">
+                <p>N100,000</p>
+                <div>
+                    <button id="minbtn3" disabled onclick="subone(3)">-</button>
+                    <span id="item1">1</span>
+                    <button onclick="addone(3)">+</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="cart4">
+            <div class="pic">
+                <img class="pics" src="./res/MIcrowave.jpg" alt="">
+                <button>REMOVE</button>
+            </div>
+            <div class="name">
+                <p class="thename">Microwave</p>
+                <p class="seller">Seller: Jumia</p>
+                <p class="units">Few units left</p>
+            </div>
+            <div class="price">
+                <p>N50,000</p>
+                <div>
+                    <button id="minbtn4" disabled onclick="subone(4)">-</button>
+                    <span id="item1">1</span>
+                    <button onclick="addone(4)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="summary">
+        <p id="sumhead">Cart Summary</p>
+        <hr>
+        <p id="subtotal">Subtotal = N<span id="totalprice">1</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
